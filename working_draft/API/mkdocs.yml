@@ -47,6 +47,7 @@ nav:
         - Activity Model: 'dm-activity-model.md'
     - Data Orchestration:
       - Introduction: 'orchestration-index.md'
+      - CargoXML Mapping: 'orchestration-cxml.md'
 
 # Theme Configuration
 theme:

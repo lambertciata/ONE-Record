@@ -15,6 +15,7 @@ In the mapping between CXML messages and ONE Record, two main aspects need to be
 ### Messages selected
 As CIMP standard has been sunset since 31st December 2024, we focus on CXML messages in their latest version (currently CXML Toolkit Edition 12)
 The selected messages for mapping are the following:
+
 | Message | Message name | Message version | Comments |
 | --- | --- | --- | --- |
 | XFWB | XML Waybill Message | 5.00 | 1st draft available |

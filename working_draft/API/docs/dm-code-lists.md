@@ -1,5 +1,5 @@
 ONE Record data model 3.0 introduced code lists for type safety. These replaced data properties holding enumberations and strings referencing a particular code list.
-Code lists are built on using custom objects. Many code lists are published as named individuals in the [ONE Record coreCodeLists ontology] (https://onerecord.iata.org/ns/coreCodeLists).
+Code lists are built on using custom objects. Many code lists are published as named individuals in the [ONE Record coreCodeLists ontology](https://onerecord.iata.org/ns/coreCodeLists).
 For unpublished or open code lists, the embedded object [CodeListElement](https://onerecord.iata.org/ns/cargo#CodeListElement) is used. A code list is open when it is not exhaustive.
 The approach also allows to refer codes defined as linked data outside of ONE Record. This includes, for example, code lists published as part of the [BSP data model of UN/CEFACT](https://vocabulary.uncefact.org/code-lists).
 This page provides guidance on how to use code lists in practical use cases.
@@ -26,12 +26,78 @@ It features the following properties if a custom instance as embedded object is 
 
 ## Using a named individual for an enumberation
 
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-enumberation.json"
+```
+
+_([examples-dm/code-lists-enumberation.json](examples-dm/code-lists-enumberation.json))_
+
 ## Using a code from a closed code list defined in ONE Record
+
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-closed-code-list.json"
+```
+
+_([examples-dm/code-lists-closed-code-list.json](examples-dm/code-lists-closed-code-list.json))_
 
 ## Using a defined code from an open code list defined in ONE Record
 
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-open-code-list-1.json"
+```
+
+_([examples-dm/code-lists-open-code-list-1.json](examples-dm/code-lists-open-code-list-1.json))_
+
 ## Using an undefined code from an open code list defined in ONE Record
+
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-open-code-list-2.json"
+```
+
+_([examples-dm/code-lists-open-code-list-2.json](examples-dm/code-lists-open-code-list-2.json))_
 
 ## Using an undefined code that is not published as linked data
 
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-enumberation.json"
+```
+
+_([examples-dm/code-lists-enumberation.json](examples-dm/code-lists-enumberation.json))_
+
 ## Using a defined code defined by another linked data vocabulary
+
+```http
+POST /logistics-objects HTTP/1.1
+Host: 1r.example.com
+Content-Type: application/ld+json; version=2.0.0-dev
+Accept: application/ld+json; version=2.0.0-dev
+
+--8<-- "examples-dm/code-lists-other-linked-data-code-list.json"
+```
+
+_([examples-dm/code-lists-other-linked-data-code-list.json](examples-dm/code-lists-other-linked-data-code-list.json))_

@@ -41,6 +41,7 @@ nav:
     - Data Model Specification:
       - Introduction: 'dm-index.md'
       - Concepts: 'dm-concepts.md'
+      - Design Principles: 'dm-designprinciples.md'
       - Implementation Guidelines: 'dm-implementation-guidelines.md'
       - Core Resources:
         - Overview: 'dm-features.md'

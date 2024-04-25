@@ -7,7 +7,7 @@ site_description: >-
 
 # Copyright
 copyright: >
-  <img alt="Made with love for Digital Cargo" style="vertical-align: bottom" src=https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20for-Digital%20Cargo-informational" />&nbsp;&nbsp;|&nbsp;&nbsp;Copyright © 2023 IATA
+  <img alt="Made with love for Digital Cargo" style="vertical-align: bottom" src=https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20for-Digital%20Cargo-informational" />&nbsp;&nbsp;|&nbsp;&nbsp;Copyright © 2024 IATA
 
 # Content
 nav:
@@ -46,6 +46,7 @@ nav:
       - Core Resources:
         - Overview: 'dm-features.md'
         - Activity Model: 'dm-activity-model.md'
+        - Code Lists: 'dm-code-lists.md'
     - Data Orchestration:
       - Introduction: 'orchestration-index.md'
       - CargoXML Mapping: 'orchestration-cxml.md'

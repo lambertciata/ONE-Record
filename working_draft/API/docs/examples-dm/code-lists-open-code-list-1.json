@@ -1,8 +1,10 @@
 {
     "@context": {
-        "cargo": "https://onerecord.iata.org/ns/cargo#"
+        "cargo": "https://onerecord.iata.org/ns/cargo#",
+        "ccodes": "https://onerecord.iata.org/ns/coreCodeLists#"
     },
     "@type": "cargo:Piece",
     
-    "cargo:loadType": "cargo:UNIT_LOAD_DEVICE"
+    "cargo:specialHandlingCodes": "ccodes:SpecialHandlingCode_EAW",
+    "cargo:specialHandlingCodes": "ccodes:SecurityStatus_NSC"
 }

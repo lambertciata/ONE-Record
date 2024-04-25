@@ -4,5 +4,5 @@
     },
     "@type": "cargo:Piece",
     
-    "cargo:loadType": "cargo:UNIT_LOAD_DEVICE"
+    "cargo:loadType": "cargo:LOOSE"
 }

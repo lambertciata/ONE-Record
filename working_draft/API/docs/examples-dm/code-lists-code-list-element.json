@@ -2,7 +2,16 @@
     "@context": {
         "cargo": "https://onerecord.iata.org/ns/cargo#"
     },
-    "@type": "cargo:Piece",
+    "@type": "cargo:Product",
     
-    "cargo:loadType": "cargo:UNIT_LOAD_DEVICE"
+    "cargo:hsCode": [
+        {
+            "@type": "cargo:CodeListElement",            
+            "cargo:code": "9023",
+            "cargo:codeDescription": "Instruments, apparatus, models",
+            "cargo:codeLevel": 4,
+            "cargo:codeListName": "Harmonized System",
+            "cargo:codeListVersion": "Nomenclature 2024"
+        }
+    ]
 }

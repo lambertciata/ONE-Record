@@ -47,6 +47,17 @@ nav:
         - Overview: 'dm-features.md'
         - Activity Model: 'dm-activity-model.md'
         - Code Lists: 'dm-code-lists.md'
+      - Business requirements:
+        - Overview: 'dm-businessrequirements.md'
+        - Shipper letter of instriction: 'dm-sli.md'
+        - ULD Tracking: 'dm-uldtracking.md'
+        - CO2 Emission: 'dm-co2emissions.md'
+        - Interactive Cargo: 'dm-ic.md'
+        - Dangerous Goods: 'dm-dg.md'
+        - Pharmaceutical Products: 'dm-pharma.md'
+        - Live Animals: 'dm-la.md'
+        - Air Waybill: 'dm-waybill.md'
+        - Distribution: 'dm-distribution.md'
     - Data Orchestration:
       - Introduction: 'orchestration-index.md'
       - CargoXML Mapping: 'orchestration-cxml.md'

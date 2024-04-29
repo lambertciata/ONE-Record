@@ -1,5 +1,3 @@
-# Design principles
-
 ## ONE Record Vision
 The vision for ONE Record is an end-to-end digital logistics and transport supply chain where data is easily and transparently exchanged in a digital ecosystem of air cargo stakeholders, communities and data platforms. ONE Record is an open standard for data sharing and creates a single record view of the shipment. This standard defines a common data model for the data that is shared via standardized and secured web API. The standard is based on mature but progressive data sharing technologies that are well aligned with the best practices used by leading airlines. This makes it directly accessible to IT teams and service providers.
 ONE Record standard aims to become an essential part of the Internet of Logistics (IoL) data exchange infrastructure that is emerging.

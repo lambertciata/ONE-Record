@@ -4,23 +4,22 @@ While the Data Model is primarly defined in the ontology in TTL format, there is
 Our objective is to have an automated tool that allows to transcribe the ontology into a visual version.
 
 # Data Model Visualizer
-The tool is based on:
-- The open-source DBML language as described here: https://dbml.dbdiagram.io/home/
-- The open-source SQL Schema Visualizer available here: https://github.com/sqlhabit/sql_schema_visualizer
+The tool is based on the open-source SQL Schema Visualizer available here: [https://github.com/sqlhabit/sql_schema_visualizer](https://github.com/sqlhabit/sql_schema_visualizer)
 
-We host the tool on GitHub: https://aloccid-iata.github.io/ontology_visualizer/ (temporary repository)
+We host the tool on GitHub: [https://aloccid-iata.github.io/ontology_visualizer/](https://aloccid-iata.github.io/ontology_visualizer/) (temporary repository)
 
 The tool has been customized to fit our needs in terms of visual and features.
 
-# Ontology to DBML
-The first step is to put the ontology, or at least the part we want to disaply in DBML format.
-
-*to be further documented as relevant*
-
 # Data Mdodel Visualizer in details
-## Main aspects
+## Preparing the ontology
 
-*to be further documented as relevant*  
+The ontology in its TTL format cannot be used directly in the Visualizer, it needs to be  transcribed in the format used by the SQL Schema Visualizer. 
+
+// to be further documented
+
+## Main technical aspects
+
+// to be further documented
 
 ## Additional features
 Additional features have been added to enhance the user experience and facilitate the understanding of the data model.

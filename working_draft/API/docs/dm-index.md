@@ -1,4 +1,6 @@
-<img src="./img/ONE-Record_API-Logo.png" style="scale: 80%">
+
+<img src="https://github.com/lambertciata/ONE-Record/assets/58464775/4fa54b65-27ca-4fd6-ae71-bbc3155b9c82" width="450">
+
 
 # Purpose
 

@@ -47,6 +47,7 @@ nav:
         - Overview: 'dm-features.md'
         - Activity Model: 'dm-activity-model.md'
         - Code Lists: 'dm-code-lists.md'
+        - Data Model Visualizer: 'dm-visualizer.md'
       - Business requirements:
         - Overview: 'dm-businessrequirements.md'
         - Shipper letter of instriction: 'dm-sli.md'

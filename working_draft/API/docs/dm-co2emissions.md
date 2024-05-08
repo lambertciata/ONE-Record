@@ -5,10 +5,12 @@ Our objective is to provide necessary information in the data model to be able t
 - Distance of the transport movement, calculated and measured
 - Fuel consumed, calculated and measured
 - Method used for calculation of the CO2 emissions
-# Chosen approach in the data model
+  
+# Chosen approach 
 To fulfil these requirements, it has been decided to add relevant data properties in the model on the Transport movement and Transport Means.
 Details about the method used for calculation are to be managed outside of the data model. The data model needs to ensure that all required information are recorded and available.
-# Impacts and updates on the data model
+
+# Data model
 A few data properties are added on TransportMeans and TransportMovement. A new object CO2Emissions is added as well as depicted below:]
 
  <p align="center"><img src="https://user-images.githubusercontent.com/58464775/161542962-673fb079-7f30-44f8-9485-36a519b17e2b.png"></p>

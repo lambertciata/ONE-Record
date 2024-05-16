@@ -3,21 +3,21 @@ The requirements for pharmaceutical shipments may differ depending on the partie
 
  ![image](https://user-images.githubusercontent.com/58464775/161540717-d8822fe8-98be-4706-8dd2-95921ddbc4cb.png)
  **From Shipper to forwarder:**
-- Product Temperature Range: the shipper express the temperature range the shipment need to handled. The requirement is expressed in free format.
-- Packaging Technology: passive or active technology
-- Packaging Type: packaging type as per chapter 6.3.7 of the TCR
-- Unit Loading Device: information related to the ULD (exemple: uldTypeCode, serialNumber, ownerCode, ataDesignator)
+ - Product Temperature Range: the shipper express the temperature range the shipment need to handled. The requirement is expressed in free format.
+ - Packaging Technology: passive or active technology
+ - Packaging Type: packaging type as per chapter 6.3.7 of the TCR
+ - Unit Loading Device: information related to the ULD (exemple: uldTypeCode, serialNumber, ownerCode, ataDesignator)
 
 
 ![image](https://user-images.githubusercontent.com/58464775/161540770-fe4db666-d382-45a7-b899-1410a1c4e8e4.png)
-  **From forwarder to carrier:**
-- Product Temperature Range: Special handling code (COL, CRT, ERT, FRO)
-- Packaging Technology: Special handling code (ACT, PIP)
-- Packaging Type: as per chapter 6.3.7
-- Unit Loading Device: see ULD data elements from ONE Record data model
+  **From forwarder to carrier:** 
+  - Product Temperature Range: Special handling code (COL, CRT, ERT, FRO)
+  - Packaging Technology: Special handling code (ACT, PIP)
+  - Packaging Type: as per chapter 6.3.7
+  - Unit Loading Device: see ULD data elements from ONE Record data model
 
 # Chosen approach
-The current data model covers the pharmaceutical shipments requirements using the **ULD, Piece, ServiceRequest and SpecialHandling** objects.
+Data model covers the pharmaceutical shipments requirements using the **ULD, Piece, ServiceRequest and SpecialHandling** objects.
 
  <p align="center"><img src="https://user-images.githubusercontent.com/58464775/161540599-509917bb-17f7-453f-b111-afe3e20b5d77.png"></p>
 

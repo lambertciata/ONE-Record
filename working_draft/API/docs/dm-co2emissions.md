@@ -7,10 +7,10 @@ Our objective is to provide necessary information in the data model to be able t
 - Method used for calculation of the CO2 emissions
   
 # Chosen approach 
-To fulfil these requirements, it has been decided to add relevant data properties in the model on the Transport movement and Transport Means.
-Details about the method used for calculation are to be managed outside of the data model. The data model needs to ensure that all required information are recorded and available.
+Calculation of CO2 emissions require some data element that are relevant on `TransportMovement` and `TransportMeans`, it was decided to add a specific `CO2Emissions` object to contain calculated values.
+
+`CO2Emissions` object is generic enough to allow for various calculation methods to be used. The calculation itself is not part of ONE Record scope but we want ot make sure all required information are available.
 
 # Data model
-A few data properties are added on TransportMeans and TransportMovement. A new object CO2Emissions is added as well as depicted below:]
 
  <p align="center"><img src="https://user-images.githubusercontent.com/58464775/161542962-673fb079-7f30-44f8-9485-36a519b17e2b.png"></p>

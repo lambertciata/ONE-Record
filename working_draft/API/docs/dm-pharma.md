@@ -24,15 +24,15 @@ Data model covers the pharmaceutical shipments requirements using the **ULD, Pie
  <p align="center"><img src="https://user-images.githubusercontent.com/58464775/161540599-509917bb-17f7-453f-b111-afe3e20b5d77.png"></p>
 
 
-1.	The ULD object capture all the information related to the ULD used by the shipper/forwarder
-2.	The information is captured at Piece level. The Piece object enables to capture all the required information, including goods description, product information, ULD information, handling information, packaging type as per chapter 6.3.7 of the TCR. If accompany certificate are required, they can be digitalized (if acceptable) in PDF format for example and the link to the PDF document can be inserted using the externalReference data property. 
-3.	The SpecialRequest object is used to capture the shipper requirements. Either the special handling code can be inserted (if known), or the requirement can be inserted in full text using the statementText attribute. Requirements may include:
+The ULD object capture all the information related to the ULD used by the shipper/forwarder
 
+The information is captured at Piece level. The Piece object enables to capture all the required information, including goods description, product information, ULD information, handling information, packaging type as per chapter 6.3.7 of the TCR. If accompany certificate are required, they can be digitalized (if acceptable) in PDF format for example and the link to the PDF document can be inserted using the externalReference data property. 
+
+The SpecialRequest object is used to capture the shipper requirements. Either the special handling code can be inserted (if known), or the requirement can be inserted in full text using the statementText attribute. Requirements may include:
 - Active or Passive packaging
 - Product temperature range
 
-4.	The SpecialHandling object aims to capture all the special handling codes. For pharma product, the use of the below codes have been identified:
-5.	
+The SpecialHandling object aims to capture all the special handling codes. For pharma product, the use of the below codes have been identified:
 - PIL: Pharmaceuticals
 - ACT: Active Temperature Controlled System
 - PIP: Passive Insulated Packaging 

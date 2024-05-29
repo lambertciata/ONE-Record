@@ -61,6 +61,7 @@ nav:
         - Distribution: 'dm-distribution.md'
     - Data Orchestration:
       - Introduction: 'orchestration-index.md'
+      - MOP mapping: 'orchestration-mop.md'
       - CargoXML Mapping: 'orchestration-cxml.md'
 
 # Theme Configuration

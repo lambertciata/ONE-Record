@@ -21,9 +21,8 @@ If Shipper hosts a 1R server he needs to make sure teh Forwarder has proper acce
 ### API interaction
 
 | 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | Shipper or Forwarder | Shipper or Forwarder | POST | Product | Minimum Product details, including HS codes: hsCode, description |
-
 | Shipper or Forwarder | Shipper or Forwarder | POST | Item | Minimum Item details including link to Product: itemQuantity, ofProduct |
 | Shipper or Forwarder | Shipper or Forwarder | POST | Piece | Minimum Piece details to define the goods. Includes link to Product or Item: contentProducts/containedItems, goodsDescription, slac, specialHandlingCodes, textualHandlingInstructions, declaredValue |
 | Shipper or Forwarder | Shipper or Forwarder | POST | SecurityDeclaration | Security details available at this stage |
@@ -39,7 +38,7 @@ Forwarder creates the Waybill objects (House) and Shipments based on the details
 ### API interaction
 
 | 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | 
 | Forwarder | Forwarder | POST | Waybill | House Waybill object: arrivalLocation, departureLocation, involvedParties (Shipper and Forwarder), waybillType (House), waybillNumber, declaredValueForCustoms, declaredValueForCarriage |
 | Forwarder | Forwarder | POST | Shipment | Shipments details and link to Waybill object: waybill, insurance, involvedParties, totalGrossWeight, totalDimensions, goodsDescription |
 | Forwarder | Forwarder | PATCH | Waybill | Add backlink Waybill>Shipment |

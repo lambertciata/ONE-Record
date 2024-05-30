@@ -63,6 +63,7 @@ nav:
       - Introduction: 'orchestration-index.md'
       - MOP mapping: 'orchestration-mop.md'
       - CargoXML Mapping: 'orchestration-cxml.md'
+      - P01 - Book Shipment: 'orchestration-01.md'
 
 # Theme Configuration
 theme:

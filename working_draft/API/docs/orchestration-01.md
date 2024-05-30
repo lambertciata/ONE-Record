@@ -39,3 +39,58 @@ Forwarder creates the Waybill objects (House) and Shipments based on the details
 | Forwarder | Forwarder | POST | Waybill | House Waybill object: arrivalLocation, departureLocation, involvedParties (Shipper and Forwarder), waybillType (House), waybillNumber, declaredValueForCustoms, declaredValueForCarriage |
 | Forwarder | Forwarder | POST | Shipment | Shipments details and link to Waybill object: waybill, insurance, involvedParties, totalGrossWeight, totalDimensions, goodsDescription |
 | Forwarder | Forwarder | PATCH | Waybill | Add backlink Waybill>Shipment |
+
+# 03. Check Banned and Restricted Commodities
+
+Internal process
+
+# 04. Plan routing direct or consolidation
+
+Internal process
+
+# 05. Arrange Capacity
+
+Distirbution process
+
+# 06. Confirm Capacity
+
+Distribution process
+
+# 07. Create Shipment Planning (MAWB) and confirm Service Commitment to Forwarder
+
+Distribution process, the main outputs expected are the Booking object created by the Airline and the Waybill object (MAWB) created by the Forwarder
+
+**Status/Message:** `RMP` and `BKD`
+
+**CiQ Milestone:** `BKD`
+
+# 08. Confirm capacity with Customer
+
+Internal process
+
+# 09. Create D2D Shipment Planning (HAWB/DAWB) and confim Service Commitment too Shipper
+
+**Status/Message:** `RMI` 
+
+**CiQ Milestone:** `CBK
+## ONE Record actions
+
+The Forwarder updates the Waybill objects (Master and Houses) to link them. TransportMovement objects for Truck movement are created, Loading actions (planned) are created and linked with the respective TransportMovement and Pieces.
+
+Flight details are directly retrieved from the Booking.
+
+## API interaction
+
+| 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
+| --- | --- | --- | --- | --- | 
+| Forwarder | Forwarder | PATCH | Waybill (Master) | Add backlink Waybill (House) > Waybill (Master) |
+| Forwarder | Forwarder | PATCH | Waybill (House) | Add backlink Waybill (Master) > Waybill (House) |
+| Forwarder | Forwarder | POST | TransportMovement (Truck Movement) | Add backlink Waybill>Shipment |
+| Forwarder | Forwarder | POST | TransportMeans (Truck) | Create TransportMeans or Identify existing one and add link to TransportMovement (Truck): operatedTransportMovement, vehicleType, vehicleModel, vehicleRegistration, transportOrganization |
+| Forwarder | Forwarder | PATCH | TransportMovement (Truck Movement) | Add backlink TransportMeans > TransportMovement (Truck) |
+| Forwarder | Forwarder | POST | Loading (Planned) | Loading action (planned): servedActivity (TM Truck), loadedPieces, onTransportMeans, loadingType (Loading), executionStatus (Planned), actionEndTime |
+
+# 10. Share planning for pickup all involved Service Suppliers
+
+The Forwarder manages the data access to relevant stakeholders if using ONE Record to share all pickup data.
+

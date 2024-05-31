@@ -65,6 +65,7 @@ nav:
       - MOP mapping:
         - Introduction: 'orchestration-mop.md'
         - P01 - Book Shipment: 'orchestration-01.md'
+        - P02 - Arrange handover from Shipper: 'orchestration-02.md'
 
 # Theme Configuration
 theme:

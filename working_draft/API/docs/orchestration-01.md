@@ -28,7 +28,6 @@ If Shipper hosts a 1R server he needs to make sure teh Forwarder has proper acce
 # 02. Receive Forwarding Order from shipper & check security status
 In this step the Forwarder receives data from the Shipper
 
-## ONE Record actions
 Forwarder creates the Waybill objects (House) and Shipments based on the details provided by the Shipper.
 
 ## API interaction

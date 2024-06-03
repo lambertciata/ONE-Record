@@ -13,7 +13,7 @@ Forwarder validates data of the TransportMovement, a PATCH can be done if necess
 Human action, can be done by the shipper, by the trucker on pickup or by the forwarder on arrival at warehouse. UPID is defined for each piece.
 
 # 04. Associate unique piece level information with forwarding order
-## ONE Record actions
+
 Piece are udpated with UPID information and any additional details
 
 ## API interaction

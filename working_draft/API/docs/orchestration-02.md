@@ -1,5 +1,3 @@
-// P02 - Arrange handover from Shipper
-
 Process where all preparations are made on Shipper's end and on Forwarder's end to handover the shipment to Forwarder.
 
 # 01. Arrange Pick up or Self Delivery of Freight

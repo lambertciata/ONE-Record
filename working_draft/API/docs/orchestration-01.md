@@ -5,7 +5,6 @@ First Segment of the MOP, related to the interaction between the Shipper and the
 # 01. Shipper provides shipment details
 In this step the Shipper provides initial shipment details to its freight forwarder.
 
-## ONE Record actions
 As Shipper provides shipment details, it is the equivalent of the SLI. The Shipper or the Forwarder on its behalf, creates Product, Item and Piece objects, including ULD if relevant and any Special cargo subtype for Live Animals or Dangerous Goods to further describe goods to transport. SecurityDeclaration object can be created as well if relevant
 Parties are created as well (if not already existing), are required at minimum the Consignee (Shipper) and Consignor details.
 
@@ -72,8 +71,7 @@ Internal process
 
 **Status/Message:** `RMI` 
 
-**CiQ Milestone:** `CBK
-## ONE Record actions
+**CiQ Milestone:** `CBK`
 
 The Forwarder updates the Waybill objects (Master and Houses) to link them. TransportMovement objects for Truck movement are created, Loading actions (planned) are created and linked with the respective TransportMovement and Pieces.
 

@@ -11,6 +11,9 @@ copyright: >
 
 # Content
 nav:
+    - General information:
+      - Introduction: 'gi-index.md'
+      - Resources: 'gi-resources.md'
     - API Specification:
       - Introduction: 'index.md'
       - Concepts: 'concepts.md'

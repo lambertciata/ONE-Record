@@ -1,5 +1,3 @@
-// P01 - Book Shipment
-
 First Segment of the MOP, related to the interaction between the Shipper and the Forwarder.
 
 # 01. Shipper provides shipment details

@@ -19,5 +19,16 @@ Piece are udpated with UPID information and any additional details
 | 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
 | --- | --- | --- | --- | --- |
 | Shipper or Forwarder | Forwarder | PATCH | Piece | Update UPID property on Piece |
+| Shipper  | Forwarder | POST | Event on Piece | Create Event: eventFor (Piece), eventLocation (if relevant), eventCode or eventName, eventDate, recordingActor |
 
+# 05. Pick up freight
+Loading (actuals) are created and linked with TransportMovement (truck) and Pieces.
 
+Events can be created on the Pieces to inform of the loading into the truck
+
+## API interaction
+
+| 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
+| --- | --- | --- | --- | --- |
+| Forwarder | Forwarder | POST | Loading (Actual) | Loading action (Actual): servedActivity (TM Truck), loadedPieces, onTransportMeans, loadingType (Loading), executionStatus (Actual), actionEndTime |
+| Shipper  | Forwarder | POST | Event on Piece | Create Event: eventFor (Piece), eventLocation (if relevant), eventCode or eventName, eventDate, recordingActor |

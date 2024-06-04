@@ -67,6 +67,12 @@ Event on Waybill (Master) can be added to indicate a self-filing
 
 Event on Waybill (Master) can be added by Authorities to indicate the Customs assessment status
 
+## API interaction
+
+| 1R Server | Stakeholder | API Calls | LogiticsObject | Details |
+| --- | --- | --- | --- | --- |
+| Forwarder | Authorities | POST | Event on Waybill | Create Event: eventFor (Waybill), eventName (Relevant Customs assessment status) |
+
 # 07. Sort & transfer freight to build or storage locations
 
 Internal process but could be used with Storing action in the future

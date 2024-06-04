@@ -71,6 +71,12 @@ nav:
         - P02 - Arrange handover from Shipper: 'orchestration-02.md'
         - Movement: 'orchestration-mvt01.md'
         - P03 - Receive freight at forwarder warehouse: 'orchestration-03.md'
+        - P04 - Prepare transfer to forwarder - Downstream warehouse or airline: 'orchestration-04.md'
+        - Movement: 'orchestration-mvt02.md'
+        - P05 - Prepare export shipments: 'orchestration-05.md'
+        - P06 - Prepare receipt into carrier domain: 'orchestration-06.md'
+        - Movement: 'orchestration-mvt03.md'
+        - P07 - Receive shipment at carrier domain: 'orchestration-07.md'
         
 
 # Theme Configuration

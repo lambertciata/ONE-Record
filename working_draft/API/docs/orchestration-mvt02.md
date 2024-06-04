@@ -1,4 +1,4 @@
-This part of the process represents the movement from the Shipper's premises to the Forwarder's warehouse.
+This part of the process represents the movement from the Forwarder's warehouse to one of its hub.
 
 # 01. Departure of truck from forwarder
 

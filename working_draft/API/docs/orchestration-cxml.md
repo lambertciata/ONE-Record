@@ -27,6 +27,23 @@ The selected messages for mapping are the following:
 | XFBL | XML Freight Booked List Message | 3.00 | - |
 | XTMV | XML Transport Movement Message | 2.00 | ? |
 
+## General conversion guidelines
+
+### Note on data types and patterns
+
+Data elements as defined in CIMP have:
+- **Length recommendations** usually based on business rules such as the Waybill number
+- Limited **data types** based on business rules or common sense
+
+When CXML was created, most restrictions were inherited from CIMP even though XML format allows to bypass technical limitations of CIMP, especially in number of occurences, field lengths or allowed characters.
+
+When first versions of ONE Record data model were created, restrictions **coming from business rules** were usually adapted in ONE Record using the `pattern` in the ontology.
+
+### General guidelines
+
+- 01 - Business rules and local regulatory requirements prevail over data properties technical restrictions (data length, pattern) expressed in the ontology if relevant.
+- 02 - When converting from ONE Record to CXML/CIMP there is no specific general guideline on the truncation of data properties. In CXML to CIMP conversion, such rules are expressed in IATA CXML Toolkit.
+
 ## XFWB Mapping
 ### Proposed mechanism
 XFWB data fields are mostly a mix of `Waybill`, `WaybillLineItem`, `Shipment`, `Pieces` and `TransportMovement` data in ONE Record realm.

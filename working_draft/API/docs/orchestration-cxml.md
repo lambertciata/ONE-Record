@@ -32,6 +32,7 @@ The selected messages for mapping are the following:
 ### Note on data types and patterns
 
 Data elements as defined in CIMP have:
+
 - **Length recommendations** usually based on business rules such as the Waybill number
 - Limited **data types** based on business rules or common sense
 

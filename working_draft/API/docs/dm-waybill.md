@@ -90,10 +90,9 @@ Approach needs to be two-fold:
 | 34B     | Optional Shipping Information - Untitled Box     | Waybill#shippingInfo                                                      |                                                                                                                                                                              |
 | 34C     | Optional Shipping Information - Untitled Box     | \-                                                                        |                                                                                                                                                                              |
 
-The Air Waybill document can be re-created at any moment as all required information are within the data model and can be retrieved using the linked data (see the conceptual data model in the Design Principles documentation). 
- <p align="center">
- <img src="https://user-images.githubusercontent.com/58464775/161540123-7ca41e43-775d-4f1e-a31f-e7c2ae79551b.png">
-</p>
+While data can change at its source (e.g. shipment being reweighted), 2 API specific features allow to re-create the equivalent of a paper Waybill using the mapping above with the right data:
+- The Audit trail ensures that all changes to data is tracked and properly identified
+- One can retrieve data using a specific timestamp (for instance equivalent to RCS event or the Waybill ready event) to have the data that was agreed upon at that time
 
  
 # Data model
